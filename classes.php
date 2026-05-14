@@ -1,3 +1,5 @@
+<?php include "includes/auth.php"; ?>
+<?php if (!isAdmin()) { header("Location: index.php"); exit; } ?>
 <?php include "includes/db.php"; ?>
 <?php include "includes/header.php"; ?>
 
